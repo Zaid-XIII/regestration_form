@@ -1,0 +1,47 @@
+city,lat,lng,country,iso2,admin_name,capital,population,population_proper
+Baghdad,33.3153,44.3661,Iraq,IQ,Baghdād,primary,6183000,8126755
+Mosul,36.3400,43.1300,Iraq,IQ,Nīnawá,admin,1694000,1694000
+Al Başrah,30.5150,47.8100,Iraq,IQ,Al Başrah,admin,1326564,1326564
+Kirkuk,35.4667,44.3167,Iraq,IQ,Karkūk,admin,975000,975000
+As Sulaymānīyah,35.5572,45.4356,Iraq,IQ,As Sulaymānīyah,admin,878146,878146
+Ar Ramādī,33.4258,43.2992,Iraq,IQ,Al Anbār,admin,874543,874543
+Erbil,36.1912,44.0092,Iraq,IQ,Arbīl,admin,846000,846000
+An Najaf,32.0000,44.3300,Iraq,IQ,An Najaf,admin,724700,724700
+Karbalā’,32.6167,44.0333,Iraq,IQ,Karbalā’,admin,690100,690100
+An Nāşirīyah,31.0439,46.2575,Iraq,IQ,Dhī Qār,admin,541600,541600
+Al Ḩillah,32.4833,44.4333,Iraq,IQ,Bābil,admin,541034,541034
+Al ‘Amārah,31.8333,47.1500,Iraq,IQ,Maysān,admin,511500,511500
+Ba‘qūbah,33.7500,44.6333,Iraq,IQ,Diyālá,admin,467900,467900
+Ad Dīwānīyah,31.9892,44.9247,Iraq,IQ,Al Qādisīyah,admin,391600,391600
+Az Zubayr,30.3833,47.7000,Iraq,IQ,Al Başrah,minor,370000,370000
+Dahūk,36.8667,43.0000,Iraq,IQ,Dahūk,admin,330600,330600
+Al Fallūjah,33.3500,43.7833,Iraq,IQ,Al Anbār,minor,326471,326471
+Al Kūt,32.4907,45.8304,Iraq,IQ,Wāsiţ,admin,321521,321521
+Ash Shāmīyah,31.9636,44.5989,Iraq,IQ,Al Qādisīyah,minor,300000,300000
+Al Qurnah,31.0158,47.4306,Iraq,IQ,Al Başrah,minor,286073,286073
+Al Ḩamzah,31.7339,45.0086,Iraq,IQ,Al Qādisīyah,minor,260000,260000
+Rāniyah,36.2550,44.8836,Iraq,IQ,As Sulaymānīyah,minor,257577,257577
+Sab‘ al Būr,33.4644,44.1536,Iraq,IQ,Baghdād,,254000,254000
+Ash Shaţrah,31.4097,46.1717,Iraq,IQ,Dhī Qār,minor,254000,254000
+Kalār,34.6292,45.3222,Iraq,IQ,As Sulaymānīyah,minor,250000,250000
+Abī al Khaşīb,30.4411,47.9725,Iraq,IQ,Al Başrah,minor,240300,240300
+Zākhū,37.1500,42.6833,Iraq,IQ,Dahūk,minor,219006,197000
+As Samāwah,31.3167,45.2833,Iraq,IQ,Al Muthanná,admin,215000,215000
+‘Aqrah,36.7414,43.8933,Iraq,IQ,Nīnawá,minor,212000,212000
+At Tājī,33.5092,44.2342,Iraq,IQ,Baghdād,,200000,200000
+Abū Ghurayb,33.2919,44.0656,Iraq,IQ,Baghdād,minor,189000,189000
+Khānaqīn,34.3333,45.3833,Iraq,IQ,Diyālá,minor,175000,175000
+Al Kūfah,32.0300,44.4000,Iraq,IQ,An Najaf,minor,166100,166100
+Sāmarrā’,34.1983,43.8742,Iraq,IQ,Şalāḩ ad Dīn,minor,158508,140400
+Al Miqdādīyah,33.9786,44.9369,Iraq,IQ,Diyālá,minor,155968,155968
+Nāḩiyat Ghammās,31.7431,44.6194,Iraq,IQ,Al Qādisīyah,,140000,140000
+Nāḩiyat Khān Banī Sa‘d,33.5700,44.5411,Iraq,IQ,Diyālá,,127000,127000
+Sawrān,36.6606,44.5508,Iraq,IQ,Arbīl,minor,125000,125000
+Ţūz Khūrmātū,34.8772,44.6383,Iraq,IQ,Şalāḩ ad Dīn,minor,119000,119000
+Salmān Bāk,33.1000,44.5833,Iraq,IQ,Baghdād,,117500,117500
+Qal‘at Sukkar,31.8589,46.0772,Iraq,IQ,Dhī Qār,,110000,110000
+Umm Qaşr,30.0342,47.9294,Iraq,IQ,Al Başrah,,107620,107620
+Tikrīt,34.6100,43.6800,Iraq,IQ,Şalāḩ ad Dīn,admin,105700,105700
+Al Fāw,29.9758,48.4722,Iraq,IQ,Al Başrah,minor,105080,105080
+Nāḩiyat al Iskandarīyah,32.9000,44.3500,Iraq,IQ,Bābil,,100600,100600
+Aţ Ţārmīyah,33.6744,44.3958,Iraq,IQ,Baghdād,minor,,

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="bg-white sm:bg-gray-200 min-h-screen w-screen flex flex-col justify-center items-center dark:bg-gradient-to-r dark:from-[#190042] dark:to-[#241430]">
+        <div class="bg-white shadow-none sm:shadow-lg px-8 sm:px-12 w-full xs:w-full sm:w-8/12 md:w-7/12 lg:w-7/12 xl:w-2/6 h-screen neon sm:h-auto py-8 dark:bg-[#190042]">
+          <div class="text-center w-full font-bold text-3xl text-gray-600 p-4 dark:text-white"> Personal Information</div>
+          <div
+              class="w-full bg-gray-200 my-3" style="height: 1px"></div>
+          
+            <form class="space-y-6" action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="grid md:grid-cols-2 md:gap-6">
+                    <div class="relative z-0 w-full group">
+                        <label for="fname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
+                        <input type="text" name="fname" id="fname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder=" " required />
+                    </div>
+                    <div class="relative z-0 w-full group">
+                        <label for="lname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
+                        <input type="text" name="lname" id="lname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder=" " required />
+                    </div>
+                  </div>
+                  <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                    <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required>
+                </div>
+                  <div>
+                    <label for="phone_number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number</label>
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="07732141412" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required maxlength="32">
+                </div>
+                <div>
+
+                    <label for="introduction" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Short Introduction</label>
+                    <textarea id="introduction" name='introduction' rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+
+                </div>
+                <div>
+                    <label for="age" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Age</label>
+                    <input type="tel"  name="age" id="age" placeholder="07732141412" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required maxlength="32">
+                
+                </div>
+                <div>
+                    <label for="city" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">City</label>
+<select id="city" name="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+  <option selected>Select a City</option>
+  {% for city in cities %}
+  <option value="{{ city }}">{{ city }}</option>
+  {% endfor %}
+</select>
+                </div>
+                <div>
+                    <label for="study" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Field of Study</label>
+                    <input type="txt" name="study" id="study" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                </div>
+                <div>
+                    <label for="degree" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Degree</label>
+<select id="degree" name="degree" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+  <option selected>Select</option>
+  <option value="Undergradute">Undergradute</option>
+  <option value="Bachelor">Bachelor</option>
+  <option value="Master">Master</option>
+  <option value="PHD">PHD</option>
+</select>
+                </div>
+                <div>
+                    <label for="experience" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Years of Experience</label>
+                    <input type="text" name="experience" id="experience" placeholder="Only float" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" 
+                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57) ||event.charCode == 46 || event.charCode == 0 "  required></div>
+
+                <div>
+                    <label for="imge" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Upload Your Photo</label>
+                    <input name="imge" id="imge"  class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400" aria-describedby="file_input_help" 
+                    type="file" accept="image/png, image/gif, image/jpeg" >
+<p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">PNG, JPG or GIF</p>
+                </div>
+                <div>
+                    <label for="resume" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Upload Your Resume</label>
+                    <input name="resume" id="resume" accept="application/pdf" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400" aria-describedby="file_input_help" 
+                    type="file" >
+<p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">PDF</p>
+                </div>
+               
+                <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                
+            </form>
+        </div>
+      </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+          
+      </body>
+</html>
